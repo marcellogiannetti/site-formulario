@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifólio</title>
+    <meta name="description" content="Esse é um site de um portifólio profissional">
+    <meta name="keywords" content="estudante, tecnologia, senac, aluno">
+    <meta name="author" content="Marcello Giannetti">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<body>
+    
+    <header>
+        <a href="#" class="logo">Marcello</a>
+        <input type="checkbox" id="menu-toggle"        class="menu-toggle">
+        <label  for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            
+            <a href="#" class="active">home</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#formação">Formação</a>
+            <a href="#experiências">Experiências</a>           
+        </nav>
+        
+        <p class="rel">Horário atual: <span id="relogio">--:--:--</span></p>
+        
+    </div>
+    
+    </header>
+        <section class="home">
+            <div class="home-img">
+                <img src="img/6500210.png" alt="engrenagem">
+            </div>
+            <div class="home-content">
+                <h1> Oi, meu nome é<span> Marcello</span>                            
+                </h1>
+                <h3 class="typing-text"> EU sou  <span></span>
+                </h3>
+                <a href="#contrate-me" class="btn">contrate-me</a>                   
+    </section>
+    
+    
+    <section id="servicos" class="blocos"> 
+        <h3>serviços</h3>
+        <div class="s-img">            
+                <img src="img/servico.jpg" alt="serviços">
+            </div>
+            <div class="in">
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>                  
+                </div> 
+        <p class="sp">clique no icone para ter acesso aos meus projetos no github</p>
+         <ul>
+            <li class="ser">Desenho Técnico / CAD</li>
+        </ul>
+         <ul>
+            <li class="ser"> Análise Estrutural / Simulações </li>
+        </ul>
+        <ul>
+            <li class="ser"> Impressão 3D </li>
+        </ul>
+        <ul>
+            <li class="ser"> Projeto e Desenvolvimento de Sistemas Automotivos</li>
+        </ul>
+        <ul>
+            <li class="ser"> Diagnóstico e Análise de Falhas em Veículos </li>
+        </ul>
+        <ul>
+            <li class="ser"> Simulação e Testes de Componentes Automotivo </li>
+        </ul>
+        <ul>
+            <li class="ser"> Customização e Melhoria de Veículo </li>
+        </ul>
+        <ul>
+            <li class="ser"> Modelagem e Impressão 3D de Peças Automotivas </li>
+        </ul>
+        <ul>
+            <li class="ser"> Manutenção Mecânica Automotiva </li>
+        </ul>
+    </section>
+
+    
+    
+    <section id="habilidades" class="blocos"> 
+        <h3>habilidades</h3>
+         <div class="habilidades-img">
+                <img src="img/download.png" alt="habilidades">
+            </div>
+        <p class="habilidadesp">Minhas habilidades são:</p>
+        <ul>
+            <li class="hab">organizado</li>
+        </ul>
+         <ul>
+            <li class="hab1">estudioso </li>
+        </ul>
+        <ul>
+            <li class="hab2"> esforçado</li>
+        </ul>
+       
+       
+    </section>
+
+    
+    
+    <section id="formação" class="blocos"> 
+        <h3>Formação</h3>
+        <div class="formacao-img">
+                <img src="img/OIP.webp" alt="formação">
+            </div>
+        <ul>
+            <li class="for">Formação no Mackenzie na área de engenharia mecanica.</li>
+        </ul>
+         <ul>
+            <li class="for">Especializacao na area automotiva </li>
+        </ul>
+        
+    </section>
+
+    
+    
+    <section id="experiências" class="blocos"> 
+        <h3>Sobre mim</h3>
+        <div class="e-img">
+                <img src="img/22.webp" alt="experiências">
+            </div>
+        <ul>
+            <li class="ep"> Meu nome é: Marcello Giannetti</li>
+        </ul>
+         <ul>
+            <li class="ep1">Eu sou formado em engenharia mecanica, com Especialização na área automotiva</li>
+        </ul>
+        <ul>
+            <li class="ep2"> Eu já trabalhei na bmw na alemanha</li>
+        </ul>
+       
+        
+    </section>
+
+    
+    
+    <section id="contrate-me" class="blocos"> 
+        <h3>Contrate-me</h3>
+         <div class="contrate-img">
+                <img src="img/o.webp" alt="contrate-me">
+            </div>
+        <div class="i">
+                    <a href="https://www.whatsapp.com/?lang=pt_PT"><i class="fa-brands fa-whatsapp"></i></a>   
+                    <a href="https://br.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>                
+                    <a href="https://pt-br.facebook.com/"><i class="fa-brands fa-facebook"></i></a>                
+                </div>  
+       
+    </section>
+
+    <script>
+  function atualizarRelogio() {
+    const agora = new Date();
+
+    const horas = String(agora.getHours()).padStart(2, '0');
+    const minutos = String(agora.getMinutes()).padStart(2, '0');
+    const segundos = String(agora.getSeconds()).padStart(2, '0');
+
+    document.getElementById('relogio').textContent = `${horas}:${minutos}:${segundos}`;
+  }
+
+  // Atualiza a cada segundo
+  setInterval(atualizarRelogio, 1000);
+
+  // Atualiza já ao carregar a página
+  atualizarRelogio();
+</script>
+
+<h1 class="formss"> Mande sua mensagem</h1>
+<div class="form">
+    <form action="https://formsubmit.co/marcello.ngiannetti@senacsp.edu.br" method="POST" />
+        <label for="nome" class="forms">Nome: </label>
+        <br>
+        <input type="text" id="nome" class:="f" placeholder="insira seu nome" required>
+        <br><br>
+        <label for="email" class="forms">E-mail: </label>
+        <br>
+        <input type="email" id="email"  class:="f" placeholder="digite seu email" required>
+        <br><br> 
+        <label for="tel" class="forms">Telefone: </label>
+        <br>
+        <input type="tel" id="telefone" name="telefone" class:="f"
+       placeholder="(99) 99999-9999"
+       pattern="\(\d{2}\)\s\d{5}-\d{4}">
+
+        <h2 class="forms">Digite sua mensagem:</h2>
+        <textarea name="mensagem" id="" cols="85" rows="20" required>  
+        </textarea>
+        <br><br>
+        <input type="submit" value="Finalizar" class="btn">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+</div>
+</body>
+</html>
