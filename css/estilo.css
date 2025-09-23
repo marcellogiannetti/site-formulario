@@ -538,6 +538,11 @@ form{
     border: #000000 solid 1rem;
     border-radius: 4rem;
     width: 35%;
+    padding: 3rem; 
+    display: flex; 
+    flex-direction: column; 
+   
+    
 }
 
 .formss{
@@ -551,8 +556,3 @@ form{
     width: 18%;
 }
 
-.f{
-    width: 10px;   /* Largura do campo */
-    height: 40px;   /* Altura do campo */
-    font-size: 16px; /* Tamanho do texto dentro do campo (opcional) */
-}
